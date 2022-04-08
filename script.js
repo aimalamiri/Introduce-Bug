@@ -247,7 +247,8 @@ function updateFormData(name, value) {
 }
 
 for (let i = 0; i < inputs.length; i += 1) {
-  inputs[i].addEventListener('input', (event) => {
+  let input = inputs[i];
+  inputs[0].addEventListener('input', (event) => {
     updateFormData(event.target.name, event.target.value);
   });
 }
